@@ -24,56 +24,56 @@
 		<table cellspacing="2">
 
 			<tr>
-				<td>Season:</td>
+				<td>季节:</td>
 				<td>
 					<select id="select_season" onChange="rebuild()">
-						<option value="0" id="season_0" selected="true">Spring</option>
-						<option value="1" id="season_1">Summer</option>
-						<option value="2" id="season_2">Fall</option>
-						<option value="3" id="season_3">Winter</option>
-						<option value="4" id="season_4">Greenhouse</option>
+						<option value="0" id="season_0" selected="true">春天</option>
+						<option value="1" id="season_1">夏天</option>
+						<option value="2" id="season_2">秋天</option>
+						<option value="3" id="season_3">冬天</option>
+						<option value="4" id="season_4">温室</option>
 					</select>
 				</td>
 			</tr>
 
             <tr id="cross_season_row">
-                <td>Cross season:</td>
+                <td>是否跨季:</td>
                 <td><input type="checkbox" id="cross_season" onChange="refresh()" /></td>
             </tr>
 
             <tr id="number_days_row">
-                <td>Number of days:</td>
+                <td>种植天数:</td>
                 <td><input type="number" id="number_days" value="28" onChange="refresh()"/></td>
             </tr>
 
 			<tr id="current_day_row">
-				<td>Current day:</td>
+				<td>当前日期:</td>
 				<td><input type="number" id="current_day" value="1" onChange="refresh()"/></td>
 			</tr>
 
 			<tr>
-				<td>Produce type:</td>
+				<td>出售产品类型:</td>
 				<td>
 					<select id="select_produce" onChange="refresh()">
-						<option value="0" selected="true">Raw</option>
-						<option value="1">Jar</option>
-						<option value="2">Keg</option>
+						<option value="0" selected="true">作物</option>
+						<option value="1">罐头</option>
+						<option value="2">小桶</option>
 					</select>
 				</td>
 			</tr>
 
 			<tr>
-				<td>Number of crops:</td>
+				<td>种植数目:</td>
 				<td><input type="number" id="number_planted" value="1" onChange="refresh()"/></td>
 			</tr>
 
 			<tr>
-				<td>Max seed money:</td>
+				<td>购买种子的最高金额:</td>
 				<td><input type="number" id="max_seed_money" value="0" onChange="refresh()"/></td>
 			</tr>
 
 			<tr>
-				<td>Average profits:</td>
+				<td>平均利润:</td>
 				<td><input type="checkbox" id="check_average" onChange="refresh()" /></td>
 			</tr>
 
@@ -82,44 +82,44 @@
 		<table cellspacing="2">
 
 			<tr>
-				<td>Seed sources:</td>
+				<td>种子来源（从哪买）:</td>
 				<td>
-					<input type="checkbox" id="check_seedsPierre" onChange="rebuild()" checked="true" /> <label for="check_seedsPierre">Pierre</label><br />
+					<input type="checkbox" id="check_seedsPierre" onChange="rebuild()" checked="true" /> <label for="check_seedsPierre">皮埃尔商店</label><br />
 					<input type="checkbox" id="check_seedsJoja" onChange="rebuild()" checked="true" /> <label for="check_seedsJoja">Joja</label><br />
-					<input type="checkbox" id="check_seedsSpecial" onChange="rebuild()" checked="true" /> <label for="check_seedsSpecial">Special</label>
+					<input type="checkbox" id="check_seedsSpecial" onChange="rebuild()" checked="true" /> <label for="check_seedsSpecial">特殊获取</label>
 				</td>
 			</tr>
 
 			<tr>
-				<td>Pay for seeds:</td>
+				<td>是否购入种子:</td>
 				<td><input type="checkbox" id="check_buySeed" onChange="refresh()" /></td>
 			</tr>
 
 			<tr>
-				<td>Fertilizer:</td>
+				<td>肥料类型:</td>
 				<td>
 					<select id="select_fertilizer" onChange="refresh()">
-						<option value="0" selected="true">None</option>
-						<option value="1">Basic Fertilizer</option>
-						<option value="2">Quality Fertilizer</option>
-						<option value="5">Deluxe Fertilizer</option>
-						<option value="3">Speed-Gro</option>
-						<option value="4">Deluxe Speed-Gro</option>
-						<option value="6">Hyper Speed-Gro</option>
+						<option value="0" selected="true">无</option>
+						<option value="1">初级废料</option>
+						<option value="2">高级肥料</option>
+						<option value="5">顶级肥料</option>
+						<option value="3">生长激素</option>
+						<option value="4">高级生长激素</option>
+						<option value="6">顶级生长激素</option>
 					</select>
 				</td>
 			</tr>
 
 			<tr>
-				<td>Pay for fertilizer:</td>
+				<td>是否购入肥料:</td>
 				<td><input type="checkbox" id="check_buyFert" onChange="refresh()" /></td>
 			</tr>
 			<tr id = "deluxe_speed_input">
-				<td>Speed-Gro Source:</td>
+				<td>肥料来源:</td>
 				<td>
 					<select id="speed_gro_source" onChange="refresh()">
-						<option value="0" selected="true">Pierre</option>
-						<option value="1">Sandy</option>
+						<option value="0" selected="true">皮埃尔商店</option>
+						<option value="1">绿洲商店</option>
 				</td>
 			</tr>
 		</table>
@@ -127,7 +127,7 @@
 		<table cellspacing="2">
 
 			<tr>
-				<td>Farming level:</td>
+				<td>耕种等级:</td>
 				<td><input type="number" id="farming_level" value="0" onChange="refresh()"/></td>
 			</tr>
 
@@ -135,16 +135,16 @@
 				<td colspan="2" class="sub">
                     <table cellspacing="2" class="subt">
                         <tr>
-                            <td>Level 5 skill:</td>
-                            <td><input type="checkbox" id="check_skillsTill" onChange="refresh()" /> Tiller<br /></td>
+                            <td>五级职业:</td>
+                            <td><input type="checkbox" id="check_skillsTill" onChange="refresh()" /> 农耕人<br /></td>
                         </tr>
                         <tr>
-                            <td>Level 10 skill:</td>
+                            <td>十级职业:</td>
                             <td >
                                 <select id="select_skills" onChange="refresh()">
-                                    <option value="0" selected="true">None</option>
-                                    <option value="1">Agriculturist</option>
-                                    <option value="2">Artisan</option>
+                                    <option value="0" selected="true">无</option>
+                                    <option value="1">农业学家</option>
+                                    <option value="2">工匠</option>
                                 </select>
                             </td>
                         </tr>
@@ -160,7 +160,7 @@
             </tr>
 
             <tr>
-                <td>Foraging level:</td>
+                <td>采集等级:</td>
                 <td ><input type="number" id="foraging_level" value="0" onChange="refresh()"/></td>
             </tr>
 
@@ -168,40 +168,40 @@
                 <td colspan="2" class="sub">
                     <table cellspacing="2" class="subt">
                         <tr>
-                            <td>Level 5 skill:</td>
-                            <td><input type="checkbox" id="check_skillsGatherer" onChange="refresh()" /> Gatherer<br /></td>
+                            <td>五级职业:</td>
+                            <td><input type="checkbox" id="check_skillsGatherer" onChange="refresh()" /> 收集者<br /></td>
                         </tr>
                         <tr>
-                            <td>Level 10 skill:</td>
-                            <td><input type="checkbox" id="check_skillsBotanist" onChange="refresh()" /> Botanist<br /></td>
+                            <td>十级职业:</td>
+                            <td><input type="checkbox" id="check_skillsBotanist" onChange="refresh()" /> 植物学家<br /></td>
                         </tr>
                     </table>
                 </td>
             </tr>
 
 			<tr>
-				<td>Farming buff food:</td>
+				<td>加成食物:</td>
 				<td>
 					<select id="select_food" onChange="refresh()">
-						<option value="0" selected="true">None</option>
-						<option value="1">Maple Bar</option>
-						<option value="1">Hashbrowns</option>
-						<option value="2">Complete Breakfast</option>
-						<option value="2">Pepper Poppers</option>
-						<option value="2">Tom Kha Soup</option>
-						<option value="3">Farmer's Lunch</option>
+						<option value="0" selected="true">无</option>
+						<option value="1">枫糖棒</option>
+						<option value="1">薯饼</option>
+						<option value="2">完美早餐</option>
+						<option value="2">爆炒青椒</option>
+						<option value="2">椰汁汤</option>
+						<option value="3">农夫午餐</option>
 					</select>
 				</td>
 			</tr>
 
 			<tr>
-				<td>Show extra info:</td>
+				<td>显示额外信息:</td>
 				<td><input type="checkbox" id="check_extra" onChange="refresh()" checked="true" /></td>
 			</tr>
 
 			<tr>
-				<td id="tdhelp"><div id="divhelp"><a href="help.html">Help</a></div></td>
-				<td id="tdhelp"><div id="divhelp"><a href="#" id="reset">Reset</a></div></td>
+				<td id="tdhelp"><div id="divhelp"><a href="help.html">帮助</a></div></td>
+				<td id="tdhelp"><div id="divhelp"><a href="#" id="reset">重置</a></div></td>
 			</tr>
 
 		</table>
