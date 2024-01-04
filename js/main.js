@@ -1007,16 +1007,16 @@ function updateGraph() {
 
 function updateSeasonNames() {
     if (options.crossSeason) {
-        document.getElementById('season_0').innerHTML = "Spring & Summer";
-        document.getElementById('season_1').innerHTML = "Summer & Fall";
-        document.getElementById('season_2').innerHTML = "Fall & Winter";
-        document.getElementById('season_3').innerHTML = "Winter & Spring";
+        document.getElementById('season_0').innerHTML = "春天 & 夏天";
+        document.getElementById('season_1').innerHTML = "夏天 & 秋天";
+        document.getElementById('season_2').innerHTML = "秋天 & 冬天";
+        document.getElementById('season_3').innerHTML = "冬天 & 春天";
     }
     else {
-        document.getElementById('season_0').innerHTML = "Spring";
-        document.getElementById('season_1').innerHTML = "Summer";
-        document.getElementById('season_2').innerHTML = "Fall";
-        document.getElementById('season_3').innerHTML = "Winter";
+        document.getElementById('season_0').innerHTML = "春天";
+        document.getElementById('season_1').innerHTML = "夏天";
+        document.getElementById('season_2').innerHTML = "秋天";
+        document.getElementById('season_3').innerHTML = "冬天";
     }
 }
 
